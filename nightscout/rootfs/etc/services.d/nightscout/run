@@ -25,6 +25,7 @@ export PORT=1337
 export MONGODB_URI="${mongodb_uri}"
 export INSECURE_USE_HTTP=true
 export SECURE_HSTS_HEADER=false
+export DISPLAY_UNITS="mmol/L"
 
 if bashio::config.has_value 'auth_default_roles'; then
     readonly auth_default_roles=$(bashio::config 'auth_default_roles')
